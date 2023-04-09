@@ -25,7 +25,7 @@ const board_url = document.referrer.replace(/^https:/, "http:");
 
 // 取得人名, 要與 images 下的資料夾名稱相同 
 let labelStr = getCookie("labelStr");
-if (labelStr == "") labelStr = "Teddy,Chuan";
+if (labelStr == "") labelStr = "王世昌";
 labelStr = prompt("請輸入名稱並以逗號隔開人名:", labelStr);
 let labels = labelStr.toString().split(",")
 
