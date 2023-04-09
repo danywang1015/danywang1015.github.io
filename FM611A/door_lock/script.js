@@ -20,12 +20,11 @@ function getCookie(cname) {
 // 取得個別元素
 const video1 = document.getElementById('inputVideo')
 const idn = document.getElementById('identify')
-//const board_url = document.referrer;
-const board_url = document.referrer.replace(/^https:/, "http:");
+const board_url = document.referrer;
 
 // 取得人名, 要與 images 下的資料夾名稱相同 
 let labelStr = getCookie("labelStr");
-if (labelStr == "") labelStr = "王世昌";
+if (labelStr == "") labelStr = "Teddy,Chuan";
 labelStr = prompt("請輸入名稱並以逗號隔開人名:", labelStr);
 let labels = labelStr.toString().split(",")
 
