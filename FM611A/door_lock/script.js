@@ -20,7 +20,8 @@ function getCookie(cname) {
 // 取得個別元素
 const video1 = document.getElementById('inputVideo')
 const idn = document.getElementById('identify')
-const board_url = document.referrer;
+//const board_url = document.referrer;
+const board_url = document.referrer.replace(/^https:/, "http:");
 
 // 取得人名, 要與 images 下的資料夾名稱相同 
 let labelStr = getCookie("labelStr");
